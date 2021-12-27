@@ -9,8 +9,7 @@ function RecipeList({ recipes, setRecipes }) {
 
   const list = recipes.map((recipe, index) => {
     return (
-      //  <div className="recipe" key={index}>
-      <tr>
+      <tr key={index}>
         <td>{recipe.name}</td>
         <td>{recipe.cuisine}</td>
         <td>
@@ -28,17 +27,21 @@ function RecipeList({ recipes, setRecipes }) {
           </button>
         </td>
       </tr>
-      //  </div>
     );
   });
   return (
     <div className="recipe-list">
       <table>
         <thead>
-          <th>
-            <tbody>{list}</tbody>
-          </th>
+          <tr>
+            <th>Name</th>
+            <th>Cuisine</th>
+            <th>Photo</th>
+            <th>Ingredients</th>
+            <th>Preparation</th>
+          </tr>
         </thead>
+        <tbody>{list}</tbody>
       </table>
     </div>
   );
