@@ -3,7 +3,6 @@ import "./App.css";
 import RecipeCreate from "./RecipeCreate";
 import RecipeList from "./RecipeList";
 import RecipeData from "./RecipeData";
-import { StyleSheet, Text, View } from "react";
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
@@ -16,7 +15,15 @@ function App() {
       <header>
         <h1>Delicious Food Recipes</h1>
       </header>
-
+      <div class="flexxed">
+        <tr>
+          <td>Name</td>
+          <td>Cuisine</td>
+          <td>Photo</td>
+          <td>Ingredients</td>
+          <td>Preparation</td>
+        </tr>
+      </div>
       <RecipeList recipes={recipes} setRecipes={setRecipes} />
       <RecipeCreate recipes={recipes} setRecipes={setRecipes} />
     </div>

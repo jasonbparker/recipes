@@ -9,7 +9,7 @@
   height: 100%;
 }
 .flexxed {
-  justify-content: space-between;
+  width: 100;
 }
 label {
   display: inline-block;
@@ -33,7 +33,7 @@ tfoot th {
 tr {
   width: 100px;
   height: 100px;
-  border: 1px solid red;
+  border: 1px;
 }
 th {
   letter-spacing: 2px;
@@ -87,7 +87,6 @@ h1 {
 /* Column Size for thead */
 thead {
   display: flex;
-  width: ;
 }
 tbody {
   display: table;

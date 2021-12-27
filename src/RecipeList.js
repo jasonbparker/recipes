@@ -9,26 +9,26 @@ function RecipeList({ recipes, setRecipes }) {
 
   const list = recipes.map((recipe, index) => {
     return (
-      <div className="recipe" key={index}>
-        <tr>
-          <td>{recipe.name}</td>
-          <td>{recipe.cuisine}</td>
-          <td>
-            <img src={recipe.photo} alt="recipe pic" class="responsive" />
-          </td>
-          <td class="content_td">
-            <p>{recipe.ingredients}</p>
-          </td>
-          <td class="content_td">
-            <p>{recipe.preparation}</p>
-          </td>
-          <td>
-            <button name="delete" onClick={() => handleDelete(index)}>
-              Delete
-            </button>
-          </td>
-        </tr>
-      </div>
+      //  <div className="recipe" key={index}>
+      <tr>
+        <td>{recipe.name}</td>
+        <td>{recipe.cuisine}</td>
+        <td>
+          <img src={recipe.photo} alt="recipe pic" class="responsive" />
+        </td>
+        <td class="content_td">
+          <p>{recipe.ingredients}</p>
+        </td>
+        <td class="content_td">
+          <p>{recipe.preparation}</p>
+        </td>
+        <td>
+          <button name="delete" onClick={() => handleDelete(index)}>
+            Delete
+          </button>
+        </td>
+      </tr>
+      //  </div>
     );
   });
   return (
