@@ -15,7 +15,7 @@ function App() {
       <header>
         <h1>Delicious Food Recipes</h1>
       </header>
-      <div class="flexxed"></div>
+      <div></div>
       <RecipeList recipes={recipes} setRecipes={setRecipes} />
       <RecipeCreate recipes={recipes} setRecipes={setRecipes} />
     </div>

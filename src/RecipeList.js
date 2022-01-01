@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteButton from "./DeleteButton";
 
 function RecipeList({ recipes, setRecipes }) {
   function handleDelete(index) {
@@ -22,9 +23,7 @@ function RecipeList({ recipes, setRecipes }) {
           <p>{recipe.preparation}</p>
         </td>
         <td>
-          <button name="delete" onClick={() => handleDelete(index)}>
-            Delete
-          </button>
+          <DeleteButton handleDelete={() => handleDelete(index)} />
         </td>
       </tr>
     );
@@ -35,10 +34,10 @@ function RecipeList({ recipes, setRecipes }) {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
+            <th> Cuisine</th>
+            <th> Photo</th>
+            <th> Ingredients</th>
+            <th> Preparation</th>
           </tr>
         </thead>
         <tbody>{list}</tbody>
